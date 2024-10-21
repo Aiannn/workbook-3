@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css" />
+  </head>
+  <body>
+    <h2>ACME Car Rental</h2>
+
+    <label>Pickup date:</label>
+    <input type="date" id="date-1" placeholder="pickup date" />
+
+    <label>Number of days:</label>
+    <input type="date" id="date-2" placeholder="number of days" />
+
+    <label>Options</label>
+    <input type="checkbox" id="firstCheck" />
+    <label>Electronic Toll Tag 3.95$/day</label>
+    <br />
+    <input type="checkbox" id="secondCheck" />
+    <label for="">GPS 2.95$/day</label>
+    <br />
+    <input type="checkbox" id="thirdCheck" />
+    <label for="">Roadside Assistance 2.95$/day</label>
+
+    <br />
+    <br />
+    <h5>Under 25</h5>
+    <input type="radio" name="bool" id="noRadio" value="No" />
+    <label for="">No</label>
+    <input type="radio" name="bool" id="yesRadio" value="Yes" />
+    <label for="">Yes</label>
+    <br />
+    <br />
+    <button type="button" onclick="calculate()">Estimate total cost</button>
+
+    <div>
+      <p>Car rental:</p>
+      <p id="car-rental"></p>
+      <p>Options:</p>
+      <p id="options"></p>
+      <p>Under 25 subcharge:</p>
+      <p id="under-25"></p>
+      <p>Total due:</p>
+      <p id="total"></p>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
